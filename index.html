@@ -35,7 +35,7 @@
         <ul class="nav-links">
             <div class="nav-list">
                 <li class="nav-item">
-                    <a id="profit" href="">Policz zyski</a>
+                    <a id="profit" href="#lower-section">Policz zyski</a>
                 </li>
                 <li class="nav-item">
                     <a id="Product" href="">O produkcie</a>
@@ -53,19 +53,18 @@
             <div class="button-container">
                 <div class="selector">
                     <a class="selector-toggle" href="#" onclick="selectorFunc()">
-                        <span class="valueOfButton">PL</span>
+                        <span class="valueOfButton" id="languageValue">PL</span>
                         <i class="fa fa-chevron-down"></i>
                     </a>
                     <ul class="selector-list">
                         <li> 
-                            <a class="selector-toggle" href="#">
+                            <a class="selector-toggle" href="#pln">
                             <span class="valueOfButton" onclick="plChng()">PL</span>
                             <i class="fa fa-chevron-down" onclick="selectorFunc()"></i>
                             </a>
                         </li>
                         <li><a href="#eng" data-reload onclick="engChng()">EN</a></li>
-                        <li><a href="#du" data-reload  onclick="duChng()">DE</a></li>
-                        <li><a href="#du" data-reload  >GB</a></li>
+                        <li><a href="#du" data-reload  onclick="gerChng()">DE</a></li>
                     </ul>
                 </div>
                 <div class="nav-button">
