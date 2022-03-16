@@ -210,6 +210,36 @@ a{
 .bottle-img{
     width: 95%;
 }
+.bag-img{
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    position: absolute;
+    left: 75%;
+    bottom: 19%;
+    border-radius: 50%;
+    background: #FFB001;
+    display: none;
+}
+.bag-img img{
+    height: 100%;
+    border-radius: 50%;
+}
+/* BAG IMG RESPOSNSIVE */
+
+@media(max-width:500px){
+    .bag-img{
+    display: block;
+    left: 75%;
+    bottom: -5%;
+    }
+}
+@media(max-width:315px){
+    .bag-img{
+    left: 70%;
+    bottom: -5%;
+    }
+}
 .middleTxt-container{
     background: #FFB001;
     height: 365px;

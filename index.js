@@ -84,8 +84,6 @@
     lowTxt4.innerHTML = "What will you spend the saved cash on?";
     lowTxt5.innerHTML = "BUY PLN 8499";
     lowTxt6.innerHTML = "Sounds good? Be careful. We're just getting started!";
-
-
  }
  
     // GERMAN LANGUAGE
@@ -256,5 +254,6 @@
     ScrollReveal().reveal('.lower-text', { delay: 400, origin:"right" });
     ScrollReveal().reveal('.lower-button', { delay: 400, origin:"bottom" });
     ScrollReveal().reveal('.lower-text2', { delay: 400, origin:"left" });
+    ScrollReveal().reveal('.bag-img', { delay: 800, origin:"right" });
 
 
