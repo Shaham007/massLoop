@@ -80,7 +80,7 @@
     boxTxt4.innerHTML = "glass container?";
     lowTxt1.innerHTML = "Thanks to the crusher you will save";
     lowTxt2.innerHTML = "PLN 900";
-    lowTxt3.innerHTML = "annually.";
+    lowTxt3.innerHTML = "Annually.";
     lowTxt4.innerHTML = "What will you spend the saved cash on?";
     lowTxt5.innerHTML = "BUY PLN 8499";
     lowTxt6.innerHTML = "Sounds good? Be careful. We're just getting started!";
@@ -214,18 +214,18 @@
 
     const input1 = document.getElementById("input1");
 
-    input1.addEventListener("change", (e)=> {
+    input1.addEventListener("input", (e)=> {
         const newInput1 = e.target.value;
 
-            const input2 = document.getElementById("input2");
+        const input2 = document.getElementById("input2");
 
-            input2.addEventListener("change", (e)=> {
-            const newInput2 = e.target.value;
+        input2.addEventListener("input", (e)=> {
+        const newInput2 = e.target.value;
 
-            const lowTxt2 = document.getElementById("lowTxt2");
-            const calculator = 12 * (newInput1 * newInput2 - newInput1 * newInput2 / 5);
+        const lowTxt2 = document.getElementById("lowTxt2");
+        const calculator = 12 * (newInput1 * newInput2 - newInput1 * newInput2 / 5);
 
-            lowTxt2.innerHTML = calculator + " zł";
+        lowTxt2.innerHTML = calculator + " zł";
         });
 });
 
@@ -237,11 +237,11 @@
         delay:300
     });
 
-    ScrollReveal().reveal('.nav-item',  { delay: 400, interval:100 });
+    ScrollReveal().reveal('.nav-item',  { delay: 0, interval:100 });
     ScrollReveal().reveal('.logo-icon', { delay: 800, origin: "left" });
     ScrollReveal().reveal('.selector', { delay: 800, origin: "right" });
     ScrollReveal().reveal('.nav-button', { delay: 400, origin: "right" });
-    ScrollReveal().reveal('.hamburger', { delay: 400, origin: "right" });
+    ScrollReveal().reveal('.hamburger', { delay: 0, origin: "right" });
     ScrollReveal().reveal('.upperTxt', { delay: 1200, origin: "bottom" });
     ScrollReveal().reveal('.bottle-img', { delay: 1800, origin:"bottom" });
     ScrollReveal().reveal('.middleTxt-container', { delay: 400, origin:"top" });
