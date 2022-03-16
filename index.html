@@ -55,20 +55,19 @@
 
             <div class="button-container flexBox alignCentre">
                 <div class="selector">
-                    <a class="selector-toggle" href="#" onclick="selectorFunc()">
+                    <a class="selector-toggle" href="#sm" onclick="selectorMethod()">
                         <span class="valueOfButton" id="languageValue">PL</span>
                         <i class="fa fa-chevron-down"></i>
                     </a>
                     <ul class="selector-list">
                         <li> 
-                            <a class="selector-toggle" href="#pln">
-                            <span class="valueOfButton" onclick="plChng()">PL</span>
-                            <i class="fa fa-chevron-down" onclick="selectorFunc()"></i>
+                            <a class="selector-toggle" href="#pl">
+                            <span class="valueOfButton" onclick='languageChange(this.textContent)'>PL</span>
+                            <i class="fa fa-chevron-down" ></i>
                             </a>
                         </li>
-                        <li><a href="#eng" data-reload onclick="engChng()">EN</a></li>
-                        <li><a href="#du" data-reload  onclick="gerChng()">DE</a></li>
-                        <li><a href="#GB" data-reload  onclick="engChng()">GB</a></li>
+                        <li><a href="#en" onclick='languageChange(this.textContent)' >EN</a></li>
+                        <li><a href="#de" onclick='languageChange(this.textContent)' >DE</a></li>
                     </ul>
                 </div>
                 <div class="nav-button flexBox alignCentre justifyCentre">
@@ -163,5 +162,6 @@
 </section>
 
 <script src="index.js"></script>
+<script src="language.js"></script>
 </body>
 </html>

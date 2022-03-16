@@ -82,6 +82,7 @@ a{
     height: 70%;
     width: 90%;
 }
+
 .hamburger{
     display: none;
     cursor: pointer;
@@ -123,7 +124,9 @@ a{
 .selector {
     position: relative;
     display: block;
-    text-align: left;
+    text-align: center;
+    margin-left: 20px;
+    width: 40px;
 }
 .selector-toggle {
 	font-size: 17px;
@@ -224,21 +227,6 @@ a{
 .bag-img img{
     height: 100%;
     border-radius: 50%;
-}
-/* BAG IMG RESPOSNSIVE */
-
-@media(max-width:500px){
-    .bag-img{
-    display: block;
-    left: 75%;
-    bottom: -5%;
-    }
-}
-@media(max-width:315px){
-    .bag-img{
-    left: 70%;
-    bottom: -5%;
-    }
 }
 .middleTxt-container{
     background: #FFB001;
@@ -404,5 +392,35 @@ a{
     }
     .lowerTxt-container{
         height: 435px;
+    }
+}
+/* BAG IMG RESPOSNSIVE */
+
+@media(max-width:500px){
+    .bag-img{
+    display: block;
+    left: 75%;
+    bottom: -1%;
+    }
+}
+@media(max-width:440px){
+    .bag-img{
+    left: 70%;
+    bottom: 2%;
+    }
+}
+@media(max-width:410px){
+    .bag-img{
+    bottom: 5%;
+    }
+}
+@media(max-width:374px){
+    .bag-img{
+    bottom: 6%;
+    }
+}
+@media(max-width:287px){
+    .bag-img{
+    bottom: 10%;
     }
 }
