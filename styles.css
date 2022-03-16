@@ -8,18 +8,46 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
+/*=============== INLINE CSS ===============*/
+
+.flexBox{
+    display: flex;
+}
+
+.justifyCentre{
+    justify-content: center;
+}
+
+.alignCentre{
+    align-items: center;
+}
+
+.width100{
+    width: 100%;
+}
+
+.flexDirColumn{
+    flex-direction: column;
+}
+
+.font400{
+    font-weight: 400;
+}
+.font900{
+    font-weight: 900;
+}
+
 /*=============== HEADER ===============*/
 
 #header{
     position: fixed;
-    width: 100%;
-    display: flex;
     height: 100px;
     background: white;
     box-shadow: 0 0 30px rgb(0 0 0 / 30%);
@@ -28,28 +56,20 @@ html{
 }
 
 /*=============== NAVBAR ===============*/
+
 nav{
-    display: flex;
-    width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     padding: 20px 0;
 }
 
 nav ul{
     list-style: none;
-    display: flex;
     width: 60%;
-    /* gap: 40px; */
-    align-items: center;
     justify-content: space-between;
 }
 
 nav ul li{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
 }
@@ -61,13 +81,14 @@ a{
 
 .logo-icon{
     max-width: 80px;
-    height: auto;
+}
+
+.button-container{  
+    gap: 30px;
 }
 
 .nav-list{
-    display: flex;
     gap: 40px;
-    align-items: center;
 }
 
 .nav-button{
@@ -75,21 +96,13 @@ a{
     width: 152px;
     height: 57px;
     border-radius: 28.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 .nav-button a{
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 16px;
     height: 70%;
     width: 90%;
-    justify-content: center;
-    align-items: center;
 }
 
 .hamburger{
@@ -104,12 +117,6 @@ a{
     margin: 5px auto;
     transition: 0.3s ease-in;
     background: #212121;
-}
-
-.button-container{
-    display: flex;
-    gap: 30px;
-    align-items: center;
 }
 
 .selector-list{
@@ -194,11 +201,9 @@ a{
         top: 100px;
         left: -1200px;
         gap: 50;
-        height: 85%;
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        text-align: center;
+        height: 85%;
+        flex-direction: column;
         transition: 0.4s ease;
         z-index: 100;
         justify-content: space-evenly;
@@ -206,6 +211,7 @@ a{
 
     .opacity{
         opacity: 0;
+        display: none;
         transition: 0.3s;
     }
     .nav-list{
@@ -222,28 +228,24 @@ a{
         left: 37px;
     }
     .selector{
-    position: fixed;
-    right: 106px;
-    top: 36px;
-    z-index: 100;
+        position: fixed;
+        right: 106px;
+        top: 36px;
+        z-index: 100;
     }
 }
 
 /*=============== UPPER SECTION ===============*/
 
+
 .container{
-    display: flex;
-    justify-content: center;
     padding-top: 118px;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 50px;
 }
 .upperTxt{
     width: 60%;
     height: 208px;
     font-size: 55px;
-    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -251,99 +253,64 @@ a{
     width: 95%;
 }
 
-.lowerTxt-container{
+.middleTxt-container{
     background: #FFB001;
     height: 365px;
-    display: flex;
     width: 95%;
     border-radius: 30px;
-    align-items: center;
-    justify-content: center;
 }
 
 .txt-main{
     height: 100%;
     width: 60%;
     padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     justify-content: space-between;
 }
 
 .innerTxt-1{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
     font-size: 40px;
 }
 
 .innerTxt-2{
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
 }
 
 
 /* LOWER SECTION  */
 
-#lower-section{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
 
 .calculator-main{
     width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .calc-text{
-    display: flex;
-    align-items: center;
-    width: 100%;
     height: 175px;
-    flex-direction: column;
     justify-content: space-evenly;
 }
 
 .save-text{
-    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 900;
     font-size: 40px;
 }
 
-.box-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-}
-
 .bill-text{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
     font-size: 20px;
 }
 
 .cal-boxes{
-    display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-direction: row;
-    width: 100%;
     flex-wrap: wrap;
     padding: 50px 0;
 }
+
+.box-main{
+    margin: 20px 0;
+}
+
+
 .inner-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 25px 0;
-    font-family: 'Montserrat';
-    font-weight: 900;
     font-size: 20px;
     text-align: center;
 }
@@ -357,9 +324,6 @@ a{
     border: 1px solid black;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .innerBox input:focus{
@@ -371,13 +335,10 @@ a{
 }
 
 .cal-middle{
-    width: 100%;
     background: #212121;
     height: 127px;
-    display: flex;
     border-radius: 15px;
     justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -392,20 +353,13 @@ a{
 }
 
 .cal-lower{
-    display: flex;
-    width: 100%;
     margin-top: 94px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .lower-text span{
     width: 419px;
     height: 32px;
-    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
     font-size: 20px;
 }
 .lower-button{
@@ -414,27 +368,17 @@ a{
     width: 40%;
     height: 95px;
     border-radius: 47.5px;
-    display: flex;
     box-shadow: 0px 34px 64px -10px rgba(0, 0, 0, 0.15);
-    justify-content: center;
-    align-items: center;
 }
 .lower-button a{
-    display: flex;
     height: 90%;
-    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 900;
     font-size: 24px;
     width: 80%;
-    justify-content: center;
-    align-items: center;
 }
 
 .lower-text2{
-    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 900;
     font-size: 28px;
     line-height: 34px;
     margin-bottom: 100px;
