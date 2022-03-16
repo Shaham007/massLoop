@@ -1,51 +1,39 @@
 /*=============== BODY ===============*/
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
-
 html{
     scroll-behavior: smooth;
 }
-
 /*=============== INLINE CSS ===============*/
-
 .flexBox{
     display: flex;
 }
-
 .justifyCentre{
     justify-content: center;
 }
-
 .alignCentre{
     align-items: center;
 }
-
 .width100{
     width: 100%;
 }
-
 .flexDirColumn{
     flex-direction: column;
 }
-
 .font400{
     font-weight: 400;
 }
 .font900{
     font-weight: 900;
 }
-
 /*=============== HEADER ===============*/
-
 #header{
     position: fixed;
     height: 100px;
@@ -54,62 +42,50 @@ html{
     z-index: 100;
     transition: 0.5s;
 }
-
 /*=============== NAVBAR ===============*/
-
 nav{
     flex-direction: row;
     justify-content: space-around;
     padding: 20px 0;
 }
-
 nav ul{
     list-style: none;
     width: 60%;
     justify-content: space-between;
 }
-
 nav ul li{
     font-size: 16px;
     line-height: 20px;
 }
-
 a{
     text-decoration: none;
     color: #212121;
 }
-
 .logo-icon{
     max-width: 80px;
 }
-
 .button-container{  
     gap: 30px;
 }
-
 .nav-list{
     gap: 40px;
 }
-
 .nav-button{
     background: #FFB001;
     width: 152px;
     height: 57px;
     border-radius: 28.5px;
 }
-
 .nav-button a{
     font-weight: 800;
     font-size: 16px;
     height: 70%;
     width: 90%;
 }
-
 .hamburger{
     display: none;
     cursor: pointer;
 }
-
 .bar{
     display: block;
     width: 25px;
@@ -118,20 +94,16 @@ a{
     transition: 0.3s ease-in;
     background: #212121;
 }
-
 .selector-list{
     display: none;
 }
-
 .selector-list li {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.26);
     width: 100%;
 }
-
 .selector-list li:nth-child(4){
     border-bottom: none;
 }
-
 .selector-list.selectorActive{
     display: flex;
     flex-direction: column;
@@ -153,23 +125,18 @@ a{
     display: block;
     text-align: left;
 }
-
 .selector-toggle {
 	font-size: 17px;
 }
-
 .fa-chevron-down{
     font-size: 10px;
 }
-
-/* NAVBAR RESPONSIVE */
-
+/*=============== NAVBAR RESPONSIVE ===============*/
 @media(max-width:1100px){
     nav ul {
         width: 70%;
     }
 }
-
 @media(max-width:882px){
     nav ul {
         width: 80%;
@@ -188,11 +155,9 @@ a{
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
-
     .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
-
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -208,7 +173,6 @@ a{
         z-index: 100;
         justify-content: space-evenly;
     }
-
     .opacity{
         opacity: 0;
         display: none;
@@ -218,11 +182,9 @@ a{
         flex-direction: column;
         gap: 70px;
     }
-
     .nav-links.active{
         left: 0;
     }
-
     .logo-main{
         position: fixed;
         left: 37px;
@@ -234,10 +196,7 @@ a{
         z-index: 100;
     }
 }
-
 /*=============== UPPER SECTION ===============*/
-
-
 .container{
     padding-top: 118px;
     margin-bottom: 50px;
@@ -246,75 +205,58 @@ a{
     width: 60%;
     height: 208px;
     font-size: 55px;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
-
 .bottle-img{
     width: 95%;
 }
-
 .middleTxt-container{
     background: #FFB001;
     height: 365px;
     width: 95%;
     border-radius: 30px;
 }
-
 .txt-main{
     height: 100%;
     width: 60%;
     padding: 20px 0;
     justify-content: space-between;
 }
-
 .innerTxt-1{
     font-size: 40px;
 }
-
 .innerTxt-2{
     font-size: 20px;
 }
-
-
-/* LOWER SECTION  */
-
-
+/*=============== LOWER SECTION ===============*/
 .calculator-main{
     width: 80%;
 }
-
 .calc-text{
     height: 175px;
     justify-content: space-evenly;
 }
-
 .save-text{
     font-style: normal;
     font-size: 40px;
 }
-
 .bill-text{
     font-size: 20px;
 }
-
 .cal-boxes{
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 50px 0;
 }
-
 .box-main{
     margin: 20px 0;
 }
-
-
 .inner-text{
     margin: 25px 0;
     font-size: 20px;
     text-align: center;
 }
-
 .innerBox input{
     padding-left: 90px;
     height: 70px;
@@ -325,15 +267,12 @@ a{
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
-
 .innerBox input:focus{
     border: 1px solid #FFB001;
 }
-
 ::placeholder{
     font-size: 20px;
 }
-
 .cal-middle{
     background: #212121;
     height: 127px;
@@ -341,21 +280,17 @@ a{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
 .cal-middle span{
     color: white;
     font-size: 20px;
 }
-
 .cal-middle span:nth-child(2){
     opacity: 0.5;
     font-size: 24px;
 }
-
 .cal-lower{
     margin-top: 94px;
 }
-
 .lower-text span{
     width: 419px;
     height: 32px;
@@ -376,16 +311,13 @@ a{
     font-size: 24px;
     width: 80%;
 }
-
 .lower-text2{
     font-style: normal;
     font-size: 28px;
     line-height: 34px;
     margin-bottom: 100px;
 }
-
-/* RESPONSIVE WEB  */
-
+/*=============== RESPONSIVE WEB ===============*/
 @media(max-width:1100px){
     .upperTxt {
         width: 60%;
@@ -397,19 +329,16 @@ a{
         width: 50%;
     }
 }
-
 @media(max-width:740px){
     .lower-button{
         width: 60%;
     }
 }
-
 @media(max-width:630px){
     .img-box {
        width: 100%;
     }
 }
-
 @media(max-width:585px){
     .upperTxt {
         width: 80%;
@@ -427,7 +356,6 @@ a{
         width: 80%;
     }
 }
-
 @media(max-width:512px){
     .innerTxt-1 {
         font-size: 30px;
@@ -439,7 +367,6 @@ a{
         width: 95%
     }
 }
-
 @media(max-width:366px){
     .upperTxt {
         width: 90%;
@@ -449,4 +376,3 @@ a{
         height: 435px;
     }
 }
-

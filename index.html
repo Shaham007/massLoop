@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+    <!-- SCROLL REVEAL.JS ANIMATION -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>Mass Loop</title>
 
 </head>
@@ -38,13 +41,13 @@
                     <a id="profit" href="#lower-section">Policz zyski</a>
                 </li>
                 <li class="nav-item font400">
-                    <a id="Product" href="">O produkcie</a>
+                    <a id="Product" href="#upper-section">O produkcie</a>
                 </li>
                 <li class="nav-item font400">
-                    <a id="Contact" href="">Kontakt</a>
+                    <a id="Contact" href="#lower-section">Kontakt</a>
                 </li>
                 <li class="nav-item font400">
-                    <a id="faq" href="">FAQ</a>
+                    <a id="faq" href="#upper-section">FAQ</a>
                 </li>
             </div>
 
@@ -69,7 +72,7 @@
                     </ul>
                 </div>
                 <div class="nav-button flexBox alignCentre justifyCentre">
-                    <a id="navButton" class="flexBox alignCentre justifyCentre" href="">Kup</a>
+                    <a id="navButton" class="flexBox alignCentre justifyCentre" href="#lower-section">Kup</a>
                 </div>
             </div>
         </ul>
@@ -124,23 +127,23 @@
                 <span id="boxTxt2">zapełniasz miesięcznie?</span> 
                 </div>
                 <div class="innerBox">
-                    <input class="flexBox alignCentre justifyCentre" type="text" placeholder="20">
+                    <input id="input1" class="flexBox alignCentre justifyCentre" type="text" placeholder="20">
                 </div>
             </div>
             <div class="box-main flexBox alignCentre flexDirColumn">
-                <div class="inner-text flexBox alignCentre flexDirColumn">
+                <div class="inner-text flexBox alignCentre flexDirColumn font900">
                 <span id="boxTxt3">Ile płacisz za wywóz jednego</span> <br>
                 <span id="boxTxt4">pojemnika na szkło?</span> 
                 </div>
                 <div class="innerBox">
-                    <input class="flexBox alignCentre justifyCentre" type="text" placeholder="20 zł">
+                    <input id="input2" class="flexBox alignCentre justifyCentre" type="text" placeholder="20 zł">
                 </div>
             </div>
         </div>
         <div class="cal-middle flexBox alignCentre width100">
-            <span id="lowTxt1">Dzięki kruszarce zaoszczędzisz</span>
-            <span id="lowTxt2">900 zł</span>
-            <span id="lowTxt3">rocznie.</span>
+            <span class="middle-text" id="lowTxt1">Dzięki kruszarce zaoszczędzisz</span>
+            <span class="middle-text" id="lowTxt2">900 zł</span>
+            <span class="middle-text" id="lowTxt3">rocznie.</span>
         </div>
         <div class="cal-lower flexBox  alignCentre justifyCentre width100 flexDirColumn">
             <div class="lower-text">
@@ -150,7 +153,7 @@
                 <a class="flexBox alignCentre justifyCentre font900" id="lowTxt5" href="">KUP 8499 zł</a>
             </div>
             <div class="lower-text2 font900">
-                <span class="font400" id="lowTxt6">Brzmi dobrze? Uważaj. Dopiero się rozkręcamy!</span>
+                <span class="font900" id="lowTxt6">Brzmi dobrze? Uważaj. Dopiero się rozkręcamy!</span>
             </div>
         </div>
     </div>
