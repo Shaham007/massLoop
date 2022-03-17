@@ -11,31 +11,22 @@ body{
 html{
     scroll-behavior: smooth;
 }
-/*=============== INLINE CSS ===============*/
-.flexBox{
-    display: flex;
-}
-.justifyCentre{
-    justify-content: center;
-}
-.alignCentre{
-    align-items: center;
-}
-.width100{
-    width: 100%;
-}
-.flexDirColumn{
-    flex-direction: column;
-}
-.font400{
-    font-weight: 400;
-}
-.font900{
-    font-weight: 900;
-}
+
+/*=============== VARIABLES ===============*/
+
+$width100: 100%;
+$font400: 400;
+$font900: 900;
+$flexBox: flex;
+$alignCentre: center;
+$justifyCentre: center;
+$flexDirColumn: column;
+
 /*=============== HEADER ===============*/
 #header{
     position: fixed;
+    width: $width100;
+    display: $flexBox;
     height: 100px;
     background: white;
     box-shadow: 0 0 30px rgb(0 0 0 / 30%);
@@ -45,17 +36,29 @@ html{
 /*=============== NAVBAR ===============*/
 nav{
     flex-direction: row;
+    display: $flexBox;
+    align-items: $alignCentre;
+    width: $width100;
     justify-content: space-around;
     padding: 20px 0;
-}
-nav ul{
-    list-style: none;
-    width: 60%;
-    justify-content: space-between;
-}
-nav ul li{
-    font-size: 16px;
-    line-height: 20px;
+    
+    ul{
+        list-style: none;
+        width: 60%;
+        justify-content: space-between;
+        display: $flexBox;
+        align-items: $alignCentre;
+        .nav-list{
+            gap: 40px;
+            display: $flexBox;
+            align-items: $alignCentre;
+            li{
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: $font400;
+            }
+        }
+    }
 }
 a{
     text-decoration: none;
@@ -66,35 +69,42 @@ a{
 }
 .button-container{  
     gap: 30px;
+    display: $flexBox;
+    align-items: $alignCentre;
 }
-.nav-list{
-    gap: 40px;
-}
+
 .nav-button{
     background: #FFB001;
     width: 152px;
     height: 57px;
+    display: $flexBox;
+    align-items: $alignCentre;
+    justify-content: $justifyCentre;
     border-radius: 28.5px;
-}
-.nav-button a{
-    font-weight: 800;
-    font-size: 16px;
-    height: 70%;
-    width: 90%;
+    a{
+        font-weight: 800;
+        font-size: 16px;
+        height: 70%;
+        width: 90%;
+        display: $flexBox;
+        align-items: $alignCentre;
+        justify-content: $justifyCentre;
+    }
 }
 
 .hamburger{
     display: none;
     cursor: pointer;
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: 0.3s ease-in;
+        background: #212121;
+    }
 }
-.bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: 0.3s ease-in;
-    background: #212121;
-}
+
 .selector-list{
     display: none;
 }
@@ -200,9 +210,19 @@ a{
     }
 }
 /*=============== UPPER SECTION ===============*/
-.container{
-    padding-top: 118px;
-    margin-bottom: 50px;
+
+#upper-section{
+    display: $flexBox;
+    justify-content: $justifyCentre;
+    .container{
+        padding-top: 118px;
+        margin-bottom: 50px;
+        display: $flexBox;
+        justify-content: $justifyCentre;
+        align-items: $alignCentre;
+        flex-direction: $flexDirColumn;
+        
+    }
 }
 .upperTxt{
     width: 60%;
@@ -210,6 +230,7 @@ a{
     font-size: 55px;
     margin: 50px 0;
 }
+
 .bottle-img{
     width: 95%;
 }
@@ -223,18 +244,26 @@ a{
     border-radius: 50%;
     background: #FFB001;
     display: none;
-}
-.bag-img img{
-    height: 100%;
-    border-radius: 50%;
+    img{
+        width: $width100;
+        height: 100%;
+        border-radius: 50%;
+    }
 }
 .middleTxt-container{
+    display: $flexBox;
+    justify-content: $justifyCentre;
+    align-items: $alignCentre;
     background: #FFB001;
     height: 365px;
     width: 95%;
     border-radius: 30px;
+    
 }
 .txt-main{
+    display: $flexBox;
+    align-items: $alignCentre;
+    flex-direction: $flexDirColumn;
     height: 100%;
     width: 60%;
     padding: 20px 0;
@@ -242,41 +271,73 @@ a{
 }
 .innerTxt-1{
     font-size: 40px;
+    font-weight: $font900;
 }
 .innerTxt-2{
     font-size: 20px;
+    font-weight: $font400;
 }
+
 /*=============== LOWER SECTION ===============*/
-.calculator-main{
-    width: 80%;
+
+#lower-section{
+    display: $flexBox;
+    width: $width100;
+    justify-content: $justifyCentre; 
+    .calculator-main{
+        width: 80%;
+        display: $flexBox;
+        align-items: $alignCentre;
+        flex-direction: $flexDirColumn;
+    }  
 }
 .calc-text{
     height: 175px;
+    display: $flexBox;
+    align-items: $alignCentre;
+    flex-direction: $flexDirColumn;
+    width: $width100;
     justify-content: space-evenly;
 }
 .save-text{
     font-style: normal;
+    font-weight: $font900;
     font-size: 40px;
 }
 .bill-text{
     font-size: 20px;
+    font-weight: $font400;
 }
 .cal-boxes{
+    display: $flexBox;
+    width: $width100;
+    align-items: $alignCentre;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 50px 0;
+    .box-main{
+        display: $flexBox;
+        flex-direction: $flexDirColumn;
+        align-items: $alignCentre;
+        margin: 20px 0;
+        .inner-text{
+            display: $flexBox;
+            flex-direction: $flexDirColumn;
+            align-items: $alignCentre;
+            font-weight: $font900;
+            margin: 25px 0;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
 }
-.box-main{
-    margin: 20px 0;
-}
-.inner-text{
-    margin: 25px 0;
-    font-size: 20px;
-    text-align: center;
-}
-.innerBox input{
+
+.input{
     padding-left: 90px;
+    display: $flexBox;
+    align-items: $alignCentre;
+    justify-content: $justifyCentre;
     height: 70px;
     width: 225px;
     font-size: 20px;
@@ -285,56 +346,75 @@ a{
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
-.innerBox input:focus{
+.input:focus{
     border: 1px solid #FFB001;
 }
 ::placeholder{
     font-size: 20px;
 }
 .cal-middle{
+    display: $flexBox;
+    align-items: $alignCentre;
+    width: $width100;
     background: #212121;
     height: 127px;
     border-radius: 15px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    span{
+        color: white;
+        font-size: 20px;
+    }
+    span:nth-child(2){
+        opacity: 0.5;
+        font-size: 24px;
+    }
 }
-.cal-middle span{
-    color: white;
-    font-size: 20px;
-}
-.cal-middle span:nth-child(2){
-    opacity: 0.5;
-    font-size: 24px;
-}
+
 .cal-lower{
     margin-top: 94px;
+    width: $width100;
+    display: $flexBox;
+    align-items: $alignCentre;
+    justify-content: $justifyCentre;
+    flex-direction: $flexDirColumn;
 }
 .lower-text span{
     width: 419px;
+    font-weight: $font400;
     height: 32px;
     font-style: normal;
     font-size: 20px;
 }
 .lower-button{
+    display: $flexBox;
+    align-items: $alignCentre;
+    justify-content: $justifyCentre;
     background: #FFB001;
     margin: 74px 0;
     width: 40%;
     height: 95px;
     border-radius: 47.5px;
     box-shadow: 0px 34px 64px -10px rgba(0, 0, 0, 0.15);
-}
-.lower-button a{
-    height: 90%;
-    font-style: normal;
-    font-size: 24px;
-    width: 80%;
+    a{
+        display: $flexBox;
+        align-items: $alignCentre;
+        justify-content: $justifyCentre;
+        font-weight: $font900;
+        height: 90%;
+        font-style: normal;
+        font-size: 24px;
+        width: 80%;
+    }
 }
 .lower-text2{
+    font-weight: $font900;
     font-style: normal;
     font-size: 28px;
     line-height: 34px;
     margin-bottom: 100px;
 }
+
 /*=============== RESPONSIVE WEB ===============*/
 @media(max-width:1100px){
     .upperTxt {
@@ -356,6 +436,16 @@ a{
     .img-box {
        width: 100%;
     }
+    .innerTxt-1 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .innerTxt-2{
+        font-size: 18px;
+    }
+    .save-text{
+        font-size: 30px;
+    }
 }
 @media(max-width:585px){
     .upperTxt {
@@ -374,7 +464,8 @@ a{
         width: 80%;
     }
 }
-@media(max-width:512px){
+
+@media(max-width:533px){
     .innerTxt-1 {
         font-size: 30px;
     }
@@ -383,6 +474,15 @@ a{
     }
     .lower-button{
         width: 95%
+    }
+}
+@media(max-width:366px){
+    .upperTxt {
+        width: 90%;
+        height: 292px;
+    }
+    .lowerTxt-container{
+        height: 435px;
     }
 }
 @media(max-width:366px){
@@ -407,6 +507,9 @@ a{
     .bag-img{
     left: 70%;
     bottom: 2%;
+    }
+    .innerTxt-1 {
+        font-size: 25px;
     }
 }
 @media(max-width:410px){

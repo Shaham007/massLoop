@@ -26,9 +26,8 @@
     selectorList.classList.toggle("selectorActive");
     }
 
-
-function languageChange(language){
-
+    //  lANGUAGE CHANGE FUNCTION
+    function languageChange(language){
     const languageValue = document.getElementById("languageValue");
     languageValue.innerHTML = Translations[language].languageValue;
  
@@ -111,8 +110,8 @@ function languageChange(language){
 
     ScrollReveal({ 
         distance:"50px",
-        duration: 2000,
-        delay:300
+        duration: 1000,
+        delay:100
     });
 
     ScrollReveal().reveal('.nav-item',  { delay: 0, interval:100 });

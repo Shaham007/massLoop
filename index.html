@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- MY CSS  -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- GOOGLE FONTS  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,35 +25,35 @@
 </head>
 <body>
 
-<header id="header" class="flexBox width100">
+<header id="header">
 
     <!-- NAVBAR -->
 
-    <nav class="nav flexBox alignCentre width100">
+    <nav class="nav">
         <div class="logo-main">
             <a href="#upper-section" class="nav-logo">
                 <img src="img/Screenshot2.png" alt="logo-img" class="logo-icon">
             </a>
         </div>
-        <ul class="nav-links flexBox alignCentre ">
-            <div class="nav-list flexBox alignCentre">
-                <li class="nav-item font400">
+        <ul class="nav-links">
+            <div class="nav-list">
+                <li class="nav-item">
                     <a id="profit" href="#lower-section">Policz zyski</a>
                 </li>
-                <li class="nav-item font400">
+                <li class="nav-item">
                     <a id="Product" href="#upper-section">O produkcie</a>
                 </li>
-                <li class="nav-item font400">
+                <li class="nav-item">
                     <a id="Contact" href="#lower-section">Kontakt</a>
                 </li>
-                <li class="nav-item font400">
+                <li class="nav-item">
                     <a id="faq" href="#upper-section">FAQ</a>
                 </li>
             </div>
 
         <!-- LANGUAGE SELECTOR AND NAVBAR BUTTON  -->
 
-            <div class="button-container flexBox alignCentre">
+            <div class="button-container">
                 <div class="selector">
                     <a class="selector-toggle" href="#sm" onclick="selectorMethod()">
                         <span class="valueOfButton" id="languageValue">PL</span>
@@ -70,8 +70,8 @@
                         <li><a href="#de" onclick='languageChange(this.textContent)' >DE</a></li>
                     </ul>
                 </div>
-                <div class="nav-button flexBox alignCentre justifyCentre">
-                    <a id="navButton" class="flexBox alignCentre justifyCentre" href="#lower-section">Kup</a>
+                <div class="nav-button">
+                    <a id="navButton"  href="#lower-section">Kup</a>
                 </div>
             </div>
         </ul>
@@ -89,21 +89,21 @@
 
 <!-- UPPER SECTION  -->
 
-<section id="upper-section" class="flexBox justifyCentre">
-    <div class="container flexBox alignCentre justifyCentre flexDirColumn">
+<section id="upper-section">
+    <div class="container">
         <div class="upperTxt" id="upperTxt">
             Inteligentna kruszarka, która zamienia szkło w piasek.
         </div>
         <div class="img-box">
             <img class="bottle-img" src="img/Screenshot1.png" alt="bottle-img">
             <a class="bag-img" href="#lower-section">
-                <img class="width100" src="img/Screenshot4.png" alt="bag-img">
+                <img src="img/Screenshot4.png" alt="bag-img">
             </a>
         </div>
-        <div class="middleTxt-container flexBox alignCentre justifyCentre">
-            <div class="txt-main flexBox alignCentre flexDirColumn">
-                <div class="innerTxt-1 font900" id="innerTxt-1">Płać 5 razy mniej za wywóz odpadów szklanych.</div>
-                <div class="innerTxt-2 font400" id="innerTxt-2">Kruszarka zmniejsza gabaryty szklanych śmieci,
+        <div class="middleTxt-container">
+            <div class="txt-main">
+                <div class="innerTxt-1" id="innerTxt-1">Płać 5 razy mniej za wywóz odpadów szklanych.</div>
+                <div class="innerTxt-2" id="innerTxt-2">Kruszarka zmniejsza gabaryty szklanych śmieci,
                  a Ty płacisz PIĘ-CIO-KROT-NIE niższe rachunki za ich wywóz.</div>
             </div>
         </div>
@@ -112,50 +112,50 @@
 
 <!-- LOWER SECTION  -->
 
-<section id="lower-section" class="flexBox justifyCentre width100">
-    <div class="calculator-main flexBox alignCentre flexDirColumn">
-        <div class="calc-text flexBox alignCentre width100 flexDirColumn">
-            <div class="save-text font900" id="saveTxt">
+<section id="lower-section">
+    <div class="calculator-main">
+        <div class="calc-text">
+            <div class="save-text" id="saveTxt">
                 Ile zaoszczędzisz?
             </div>
-            <div class="bill-text font400" id="billTxt">
+            <div class="bill-text" id="billTxt">
                 Rachunek jest prosty.
             </div>
         </div>
-        <div class="cal-boxes flexBox alignCentre width100">
-            <div class="box-main flexBox alignCentre flexDirColumn">
-                <div class="inner-text flexBox alignCentre flexDirColumn font900">
+        <div class="cal-boxes">
+            <div class="box-main">
+                <div class="inner-text">
                 <span id="boxTxt1">Ile pojemników na szkło</span> <br>
                 <span id="boxTxt2">zapełniasz miesięcznie?</span> 
                 </div>
                 <div class="innerBox">
-                    <input id="input1" class="flexBox alignCentre justifyCentre" type="text" placeholder="20">
+                    <input id="input1" class="input" type="text" placeholder="20">
                 </div>
             </div>
-            <div class="box-main flexBox alignCentre flexDirColumn">
-                <div class="inner-text flexBox alignCentre flexDirColumn font900">
+            <div class="box-main">
+                <div class="inner-text">
                 <span id="boxTxt3">Ile płacisz za wywóz jednego</span> <br>
                 <span id="boxTxt4">pojemnika na szkło?</span> 
                 </div>
                 <div class="innerBox">
-                    <input id="input2" class="flexBox alignCentre justifyCentre" type="text" placeholder="20 zł">
+                    <input id="input2" class="input" type="text" placeholder="20 zł">
                 </div>
             </div>
         </div>
-        <div class="cal-middle flexBox alignCentre width100">
+        <div class="cal-middle">
             <span class="middle-text" id="lowTxt1">Dzięki kruszarce zaoszczędzisz</span>
             <span class="middle-text" id="lowTxt2">900 zł</span>
             <span class="middle-text" id="lowTxt3">rocznie.</span>
         </div>
-        <div class="cal-lower flexBox  alignCentre justifyCentre width100 flexDirColumn">
+        <div class="cal-lower">
             <div class="lower-text">
-                <span class="font400" id="lowTxt4">To na co wydasz zaoszczędzoną gotówkę?</span>
+                <span id="lowTxt4">To na co wydasz zaoszczędzoną gotówkę?</span>
             </div>
-            <div class="lower-button flexBox  alignCentre justifyCentre">
-                <a class="flexBox alignCentre justifyCentre font900" id="lowTxt5" href="">KUP 8499 zł</a>
+            <div class="lower-button">
+                <a id="lowTxt5" href="">KUP 8499 zł</a>
             </div>
-            <div class="lower-text2 font900">
-                <span class="font900" id="lowTxt6">Brzmi dobrze? Uważaj. Dopiero się rozkręcamy!</span>
+            <div class="lower-text2">
+                <span id="lowTxt6">Brzmi dobrze? Uważaj. Dopiero się rozkręcamy!</span>
             </div>
         </div>
     </div>
